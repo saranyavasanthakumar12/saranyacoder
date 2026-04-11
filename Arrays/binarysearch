@@ -8,8 +8,8 @@ class Solution {
             int mid = start + (end - start) / 2;
 
             if (arr[mid] == k) {
-                ans = mid;        // store answer
-                end = mid - 1;    // 🔥 move left to find first occurrence
+                ans = mid;        
+                end = mid - 1;    
             } 
             else if (arr[mid] < k) {
                 start = mid + 1;
