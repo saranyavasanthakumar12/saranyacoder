@@ -1,0 +1,21 @@
+class Solution {
+    public int getSecondLargest(int[] arr) {
+        int largest=arr[0];
+        int secondlargest=-1;
+        for(int i=1;i<arr.length;i++){
+          if(largest<arr[i]){
+              secondlargest=largest;
+              largest=arr[i];
+          }  
+          else if(largest>arr[i] && arr[i]>secondlargest){
+              if(largest==arr[i]){
+                  continue;
+              }
+              else{
+                  secondlargest=arr[i];
+              }
+          }
+        }
+        return secondlargest;
+    }
+}
