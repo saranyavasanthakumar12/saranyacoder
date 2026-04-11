@@ -1,4 +1,7 @@
-class Solution {
+class Main {
+    public static void main(String[] args) {
+        System.out.println(evenlyDivides(23));
+    }
     static int evenlyDivides(int n) {
         int num=n;
         int result=0;
