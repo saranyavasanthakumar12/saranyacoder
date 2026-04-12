@@ -1,0 +1,16 @@
+class Solution {
+
+    void printTriangle(int n) {
+        int num1=n;
+        for(int i=1;i<=num1;i++){
+            int num=1;
+            for(int j=n;j>=1;j--){
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println();
+            n--;
+        }
+        
+    }
+}
