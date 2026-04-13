@@ -1,0 +1,12 @@
+class Solution {
+    static long kthDigit(int a, int b, int k) {
+         long ans=(long)Math.pow(a,b);
+         int i=1;
+         while(k>i){
+             ans/=10;
+             i++;
+         }
+        ans%=10;
+        return ans;
+    }
+}
