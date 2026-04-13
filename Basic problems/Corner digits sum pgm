@@ -1,15 +1,15 @@
-class Solution {
-    public int corner_digitSum(int n) {
-        if(n/10==0)return n;
-        int LD=n%10;
-        int FD=0;
+class Solution
+{
+    public int corner_digitSum(int n)
+    {
+        int sum = n%10, count = 0;
         while(n>0){
-            int digit=n%10;
-            n/=10;
-            if(n==0){
-               FD=digit;
+            if(n==n%10 && count>0){
+                sum = sum+(n%10);
             }
+            count++;
+            n=n/10;
         }
-        return LD+FD;
+        return sum;
     }
 }
