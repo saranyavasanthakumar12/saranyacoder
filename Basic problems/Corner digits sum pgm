@@ -1,0 +1,15 @@
+class Solution {
+    public int corner_digitSum(int n) {
+        if(n/10==0)return n;
+        int LD=n%10;
+        int FD=0;
+        while(n>0){
+            int digit=n%10;
+            n/=10;
+            if(n==0){
+               FD=digit;
+            }
+        }
+        return LD+FD;
+    }
+}
