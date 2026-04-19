@@ -1,0 +1,10 @@
+class Solution {
+    static long squaresDiff(int N) {
+        long sum=0;
+        for(int i=1;i<=N;i++){
+            sum=sum+(long)i*i;
+        }
+        long second=(long)N*(N+1)/2;
+        return Math.abs(sum-(second*second));
+    }
+}
