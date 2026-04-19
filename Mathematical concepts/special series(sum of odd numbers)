@@ -1,0 +1,11 @@
+class Solution {
+    static long sumOfTheSeries(long n) {
+        long sum=0;
+        long ref=0;
+        for(int i=1;i<=n;i++){
+            ref=ref+((2*i)-1);
+            sum=sum+ref;
+        }
+        return sum;
+    }
+}
