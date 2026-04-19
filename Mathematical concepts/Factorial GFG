@@ -1,15 +1,11 @@
-class Main {
-    
-    static int factorial(int n, int fact) {
-        if (n == 0 || n == 1) {
-            return fact;
+class Solution {
+    // Function to calculate factorial of a number.
+    int factorial(int n) {
+        int fact=1;
+        while(n>0){
+            fact=fact*n;
+            n--;
         }
-        return factorial(n - 1, fact * n);
-    }
-
-    public static void main(String[] args) {
-        int n = 5;
-        int fact = 1;
-        System.out.println(factorial(n, fact));
+        return fact;
     }
 }
