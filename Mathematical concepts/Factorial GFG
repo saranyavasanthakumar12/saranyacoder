@@ -1,0 +1,17 @@
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        int fact=1;
+        System.out.println(factorial(n,fact));
+  }
+  static int factorial(int n,int fact) {
+        while(n>0){
+            if(n==1 || n==0){
+                return fact;
+            }
+            fact=fact*n;
+            return factorial(n-1, fact);
+        }
+        return fact;
+    }
+}
