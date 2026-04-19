@@ -1,0 +1,6 @@
+class Solution {
+    int middle(int a, int b, int c) {
+        int middle;
+        return middle = a + b + c - Math.max(a, Math.max(b, c)) - Math.min(a, Math.min(b, c));
+    }
+}
