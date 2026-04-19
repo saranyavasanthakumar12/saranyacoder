@@ -1,0 +1,16 @@
+class Solution {
+    public boolean isPalindrome(int n) {
+        int result=0;
+        n=Math.abs(n);
+        int num=n;
+        while(num>0){
+            int lastdigit=num%10;
+            result=result*10+lastdigit;
+            num/=10;
+        }
+        if(result==n){
+            return true;
+        }
+        return false;
+    }
+}
